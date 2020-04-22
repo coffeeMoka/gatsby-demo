@@ -13,15 +13,12 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro,
 }) => (
   <div>
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        backgroundImage: `url('/img/home-jumbotron.jpg')`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}
@@ -86,25 +83,6 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -138,7 +116,6 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   )
