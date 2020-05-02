@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Production E.S.C. 公式サイト',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      '同人サークル「Production E.S.C.」の公式サイト。主に同人ゲームを制作。',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
